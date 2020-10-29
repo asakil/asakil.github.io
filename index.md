@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>The Main Webpage</title>
+  <meta name="description" content="Our New Website">
+  <meta name="author" content="ACS">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
-<H1>Esther's First WebpAge</H1>
+<H1>Esther's First Webpage</H1>
 
 <body>
   <script src="js/scripts.js"></script>
