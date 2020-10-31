@@ -1,0 +1,20 @@
+/* https://css-tricks.com/stripes-css/ */
+
+body 	{
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+
+background: repeating-linear-gradient(
+  -45deg,
+  #FF5733,
+  #606dbc 160px,
+  #465298 160px,
+  #465298 320px
+);
+	}
+
+h1 	{
+  	color: white;
+  	text-align: center;
+	}
+
