@@ -6,15 +6,18 @@ body 	{
 
 background: repeating-linear-gradient(
   -45deg,
-  #FF5733,
-  #606dbc 160px,
-  #465298 160px,
-  #465298 320px
+  #FF7F33,
+/*  #606dbc 200px, */
+  #FF7F33 200px,
+  #33EEFF 200px,
+/*  #465298 400px  */
+  #ff1a1a 200px,
+  #33EEFF 400px
 );
 	}
 
 h1 	{
-  	color: white;
+  	color:white;
   	text-align: center;
 	}
 
