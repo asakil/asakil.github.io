@@ -1,23 +1,54 @@
-/* https://css-tricks.com/stripes-css/ */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    margin: 0;
+}
 
-body 	{
-	margin: auto;
-	font-family: 'Roboto', sans-serif;
+.heart {
+    position: relative;
+    width: 300px;  
+    height: 300px;  
+    background-color: red;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-background: repeating-linear-gradient(
-  -45deg,
-  #FF7F33,
-/*  #606dbc 200px, */
-  #FF7F33 200px,
-  #33EEFF 200px,
-/*  #465298 400px  */
-  #ff1a1a 200px,
-  #33EEFF 400px
-);
-	}
+/* Move pseudo-elements behind the text */
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 300px;  
+    height: 300px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: -1;  /* Move them behind the text */
+}
 
-h1 	{
-  	color:white;
-  	text-align: center;
-	}
+.heart::before {
+    top: -150px;
+    left: 0;
+}
+
+.heart::after {
+    left: 150px;
+    top: 0;
+}
+
+/* Make sure text is fully visible */
+.heart span {
+    position: absolute;
+    font-size: 36px; /* Slightly larger */
+	line-height: 1.3; /* Adjust spacing */
+    color: white;
+    font-family: 'Dancing Script', cursive; /* Apply curly font */
+    font-weight: bold;
+    transform: rotate(45deg); /* Counteract heart rotation */
+    text-align: center;
+}
 
